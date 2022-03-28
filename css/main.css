@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 0;
+  padding: .75rem 0 0;
+  gap: .75rem;
+  font-weight: normal;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3";
+}
+
+header {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "banner banner banner";
+  list-style: none;
+}
+
+div {
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  grid-area: banner;
+  grid-column: 1 / -1;
+  align-self: end;
+  color: white;
+  z-index: 1;
+}
+
+h1 {
+  padding: 1.5rem;
+  margin: 0;
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  grid-area: banner;
+  grid-column: 1 / -1;
+  align-self: end;
+  color: white;
+  z-index: 1;
+}
+
+h2, h3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.5rem;
+  font-family: Merriweather;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+  padding: 1rem 0 0 1rem;
+}
+
+.banner-img {
+  grid-area: banner;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+img {
+  width: 100%;
+}
+
+dt {
+  font-style: italic;
+}
+
+dl {
+  margin: 0;
+  padding: 0 0 1rem 1rem;
+}
+
+.temple {
+  padding: 0;
+  margin: 0;
+}
